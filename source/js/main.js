@@ -1,1 +1,1 @@
-import './scripts/ter';
+import '@babel/polyfill';
