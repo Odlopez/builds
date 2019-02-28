@@ -113,10 +113,6 @@ gulp.task("serve", function() {
 
 // "Одноразовые" таски
 // Запустить npm i -g gulp-cli, чтобы запускать "gulp webp" в терминале без ошибок
-// Еще, возможно, может понадобиться:
-// npm install node-sass@latest
-// npm install natives@1.1.6
-
 gulp.task('svg-optim', function () {
   return gulp.src('source/img/*.svg')
     .pipe(svgmin())
