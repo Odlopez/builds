@@ -1,0 +1,86 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin reset-button {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin desktop {
+  @media (max-width: $media-md) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $media-sd) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $media-tb) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: $media-s) {
+    @content;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+@mixin placeholder($color: $putty-color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+  }
+
+  &::placeholder {
+    color: $color;
+
+    opacity: 1;
+  }
+}
+
+@mixin mobile-xs {
+  @media (max-width: $media-xs) {
+    @content;
+  }
+}
+

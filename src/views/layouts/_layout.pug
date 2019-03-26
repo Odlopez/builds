@@ -1,0 +1,24 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+
+    block meta
+    title
+      block title
+
+    link(rel='stylesheet', href='css/style.min.css')
+    script(src='libs/svgxuse.min.js' async defer)
+
+  body
+    block header
+    block main
+    block footer
+
+    block scripts
+      script(src="libs/jquery/jquery-3.3.1.min.js")
+      script(src="libs/swiper/swiper.min.js")
+      script(src="https://unpkg.com/default-passive-events")
+    script(src='js/main.js')
