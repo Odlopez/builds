@@ -36,7 +36,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svgmin": "^2.2.0",
     "gulp-svgstore": "^7.0.1",
@@ -47,7 +47,8 @@
     "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "^10.1.0",
+    "sass": "^1.36.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "browserslist": [
